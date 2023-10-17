@@ -1,22 +1,20 @@
 import logo from './icon.png';
 import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-
-import FileList from './FileList';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Router>
-          <Route path='/load' exact component={FileList} />
-        </Router>        
+        <a
+          className="App-link"
+          href="http://34.123.222.223:5800"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Load files
+        </a>
+        
       </header>
     </div>
   );
